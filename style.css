@@ -11,6 +11,8 @@ body{
 }
 
 .btn{
+  margin-top: 300px;
+  align-items: center;
   padding: 10px;
   background: #f23398;
   border: none;
@@ -18,10 +20,24 @@ body{
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
+  animation: spin 3s;
 }
 
 .btn:hover{
   transform: translateY(10px);
   background: #333df2;
   color: #f23398;
+}
+
+@keyframes spin {
+  0%{
+
+  }
+  50%{
+    scale: 2;
+    border-radius: 50%;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
